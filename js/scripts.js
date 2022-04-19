@@ -1,5 +1,3 @@
-let myName = 'Bob';
-document.write(myName);
+alert('Hello world');
 
-let simpleAddition = 2 + 2;
-document.write(simpleAddition);
+console.log(favoriteFood)='Ramen';
