@@ -1,3 +1,4 @@
+//This is my first javascript code
 alert('Hello world');
-
-console.log(favoriteFood)='Ramen';
+let favoriteFood=('Ramen');
+  document.write('favoriteFood');
