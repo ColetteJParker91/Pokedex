@@ -1,4 +1,7 @@
-//This is my first javascript code
-alert('Hello world');
-let favoriteFood=('Ramen');
-  document.write('favoriteFood');
+
+let pokemonList = {
+  name :'pikachu, bulbasaur, squirtle',
+  height : '10, 9, 8',
+  type : 'electric, grass, water'
+};
+console.log(pokemonList);
