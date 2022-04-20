@@ -1,7 +1,9 @@
+let pokemonList= [
+  {name: 'pikachu', height: 0.4, type: 'electric',},
+  {name: 'bulbasaur', height: 0.7, type: 'grass'},
+  {name: 'squirtle', height:0.5, type: 'water'}
+];
 
-let pokemonList = {
-  name :'pikachu, bulbasaur, squirtle',
-  height : '10, 9, 8',
-  type : 'electric, grass, water'
-};
 console.log(pokemonList);
+
+  
