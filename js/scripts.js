@@ -1,9 +1,50 @@
-let pokemonList= [
-  {name: 'pikachu', height: 0.4, type: 'electric',},
-  {name: 'bulbasaur', height: 0.7, type: 'grass'},
-  {name: 'squirtle', height:0.5, type: 'water'}
+let pokemonList = [{
+    name: 'Pikachu',
+    height: 0.4,
+    type: 'Electric',
+  },
+  {
+    name: 'Bulbasaur',
+    height: 0.7,
+    type: 'Grass'
+  },
+  {
+    name: 'Squirtle',
+    height: 0.5,
+    type: 'Water'
+  },
+  {
+    name: 'Charmander',
+    height: 0.6,
+    type: 'Fire'
+  },
+  {
+    name: 'Caterpie',
+    height: 0.3,
+    type: 'Bug'
+  },
+  {
+    name: 'Weedle',
+    height: 0.3,
+    type: 'Bug, Poison'
+  },
+  {
+    name: 'Pidgey',
+    height: 0.3,
+    type: 'Flying, Normal'
+  },
+  {
+    name: 'Rattata',
+    height: 0.3,
+    type: 'Normal'
+  }
 ];
 
 console.log(pokemonList);
 
-  
+for (let i = 0; i < pokemonList.length; i++) {
+	document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + "." + '</p>');
+}
+if (pokemonList[i].height > 0.5) {
+		document.write ("Wow, that's big!");
+	}
