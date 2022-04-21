@@ -37,6 +37,16 @@ let pokemonList = [{
     name: 'Rattata',
     height: 0.3,
     type: 'Normal'
+  },
+  {
+    name: 'Pontya',
+    height: 1,
+    type: 'Fire'
+  },
+  {
+    name: 'Lapras',
+    height: 2.5,
+    type: 'Ice, Water'
   }
 ];
 
@@ -45,6 +55,6 @@ console.log(pokemonList);
 for (let i = 0; i < pokemonList.length; i++) {
 	document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + "." + '</p>');
 }
-if (pokemonList[i].height > 0.5) {
-		document.write ("Wow, that's big!");
+if (pokemonList[i].height > 0.9) {
+		document.write("Wow, that's big!");
 	}
