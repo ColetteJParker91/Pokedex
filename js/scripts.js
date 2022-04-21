@@ -53,8 +53,9 @@ let pokemonList = [{
 console.log(pokemonList);
 
 for (let i = 0; i < pokemonList.length; i++) {
-	document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + "." + '</p>');
-}
-if (pokemonList[i].height > 0.9) {
-		document.write("Wow, that's big!");
+  if (pokemonList[i].height > 0.9)
+	document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + " Wow, that's big!" + '</p>');
+  else {
+    document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + "." + '</p>');
+  }
 	}
