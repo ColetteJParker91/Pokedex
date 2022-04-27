@@ -1,3 +1,5 @@
+let pokemonRepository= (function(){
+
 let pokemonList = [{
     name: 'Pikachu',
     height: 0.4,
@@ -49,13 +51,25 @@ let pokemonList = [{
     type: 'Ice, Water'
   }
 ];
+function add(pokemon){
+        pokemonList.push(pokemon);
+    }
 
-console.log(pokemonList);
+    function getAll(){
+        return pokemonList;
+    }
 
-for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height > 0.9)
-	document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + " Wow, that's big!" + '</p>');
-  else {
-    document.write('<p>' + "Name: " + pokemonList[i].name + " Height: " + pokemonList[i].height + "." + '</p>');
-  }
-	}
+    return{
+        add:add,
+        getAll:getAll
+      }
+      })();
+
+pokemonRepository.getAll().forEach(function(pokemon) {
+
+    if (pokemon.height > 0.9 ) {
+        document.write('<p><b> Name:</b> ' + pokemon.name + ' (Height: ' + pokemon.height + ') is a ' + pokemon.type + " type and Wow,that's big!");
+    }else{
+        document.write('<p><b> Name:</b> ' + pokemon.name + ' (Height: ' + pokemon.height + ') is a ' + pokemon.type );}
+        document.write("<br>");
+});
