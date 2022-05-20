@@ -65,3 +65,18 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+.pokemon-front-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.modal h1 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
