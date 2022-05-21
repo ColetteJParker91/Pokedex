@@ -157,7 +157,7 @@ const pokemonRepository = (function () {
 
 
   return {
-      add, getAll, addListItem, showDetails, addEvent, loadList, loadDetails
+      add, getAll, addListItem, showDetails, loadList, loadDetails
   };
 })();
 
